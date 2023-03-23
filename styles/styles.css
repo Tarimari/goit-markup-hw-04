@@ -178,6 +178,10 @@ img {
 /*----------MAIN---------*/
 .face {
     background-color: var(--dark);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1-min.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px 600px;
+    background-position: center;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -313,6 +317,7 @@ img {
 }
 
 .team-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white_background);
 }
@@ -377,6 +382,7 @@ img {
 .filters-btn:is(:hover, :focus) {
     color: var(--white_background);
     background-color: var(--pressed_state);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
 
@@ -393,6 +399,10 @@ img {
     box-sizing: border-box;
     flex-basis: calc((100% - 48px) / 3);
     background-color: var(--white_background);
+}
+
+.exempl-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .exempl-job_filter {
