@@ -67,6 +67,8 @@ img {
 
 /*----------HEADER-FOOTER--------*/
 .header {
+    margin: 0;
+    padding: 24px 0;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: var(--accent);
@@ -82,8 +84,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 24px 0;
+
 }
 
 .header-navigate-list {
@@ -152,13 +153,16 @@ img {
 }
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--dark);
 }
 
-.footer_logo-text {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.footer-conteiner {
+    display: flex;
 }
+
+.footer_logo-text {}
 
 .footer-logo {
     color: var(--light);
@@ -175,10 +179,52 @@ img {
 
 }
 
+.footer-social {
+    margin-left: 120px;
+}
+
+.social-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+
+}
+
+.social-list-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-item-icon {}
+
+.social-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.social-icon-link:hover {
+    background-color: var(--success);
+}
+
+.social-icon {
+
+    width: 24px;
+    height: 24px;
+    fill: var(--white_background);
+}
+
 /*----------MAIN---------*/
 .face {
     background-color: var(--dark);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,url(../images/people-office\ 1-min.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg);
     background-repeat: no-repeat;
     background-size: 1440px 600px;
     background-position: center;
@@ -237,13 +283,30 @@ img {
 
 }
 
+.targets-item {}
+
+.targets-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+
+    background: var(--light);
+    border-radius: 4px;
+}
+
+.targets-svg {}
+
 .targets-list {
     display: flex;
     justify-content: space-between;
     gap: 24px;
 }
 
-.targets-item {}
+
 
 .targets-main {
     font-weight: 500;
@@ -346,6 +409,87 @@ img {
     letter-spacing: 0.02em;
     color: var(--text);
 
+}
+
+.team-list-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 24px; */
+    margin-top: 8px;
+}
+
+.team-item-icon {}
+
+.team-icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary_brand);
+}
+
+.team-icon-link:hover {
+    background-color: var(--pressed_state);
+}
+
+.team-icon {
+
+    width: 16px;
+    height: 16px;
+    fill: var(--white_background);
+}
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-main {
+
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 24px; */
+}
+
+.list {}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    margin: 0;
+    padding: 16px 32px;
+
+    border: 1px solid var(--subtle_text);
+    border-radius: 4px;
+}
+
+.customers-link {}
+
+.customers-icon {
+    fill: var(--subtle_text);
+}
+
+.customers-item:hover {
+    cursor: pointer;
+    border-color: var(--pressed_state);
+}
+
+.customers-item:hover .customers-icon {
+    fill: var(--pressed_state);
 }
 
 /*----------PORTFOLIO---------*/
