@@ -223,8 +223,9 @@ img {
 
 /*----------MAIN---------*/
 .face {
-    min-width: 1440px;
+    max-width: 1440px;
     height: 600px;
+    margin: 0 auto;
     background-color: var(--dark);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1-min.jpg);
     background-repeat: no-repeat;
@@ -549,6 +550,7 @@ img {
 }
 
 .exempl-link {
+    display: block;
     background-color: var(--white_background);
 }
 
